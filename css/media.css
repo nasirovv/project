@@ -1,0 +1,151 @@
+@media(max-width: 1260px){
+	.form{
+		background-image: none;
+	}
+}
+@media(max-width: 1160px){
+	.services__inner{
+		display: block;
+	}
+	.services__item{
+		max-width: 80%;
+		margin: 40px auto;
+	}
+}
+@media(max-width: 1000px){
+	.experience__inner{
+		display: block;
+	}
+	.experience__item{
+		max-width: 80%;
+		margin: 0 auto 70px;
+	}
+	.experience__box{
+		margin: 20px auto;
+	}
+}
+@media(max-width: 900px){
+	.slider .slick-btn{
+		display: none !important;
+	}
+	.services__top{
+		display: block;
+		text-align: center;
+		padding: 0;
+	}
+	.services__name{
+		max-width: 100%;
+		padding: 0 30px 40px 30px;
+	}
+	.services__top:before{
+		display: none;
+	}
+	.form__top:before{
+		display: none;
+	}
+	.form__top{
+		display: block;
+		text-align: center;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.form__top .services__name{
+		padding-bottom: 0;
+	}
+}
+@media(max-width: 850px){
+	.form__menu{
+		display: block;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.form__menu input , .form__menu textarea{
+		width: 100%;
+	}
+	.form-btn{
+		bottom: -20px;
+	}
+	.form{
+		padding-bottom: 50px;
+	}
+}
+@media(max-width: 700px){
+	.header__btn{
+		float: none;
+		display: block;
+		padding-left: 30px;
+	}
+	.header__top{
+		text-align: center;
+	}
+	.header__btn:before{
+		display: none;
+	}
+	.menu ul{
+		display: none;
+		position: absolute;
+		right: 0;
+		left: 0;
+		background-color: #ffc222;
+		margin-top: 20px;
+		z-index: 50;
+	} 
+	.menu li{
+		display: block;
+		text-align: center;
+	}
+	.menu a{
+		display: block;
+		border-bottom: 1px solid #fff;
+		border-top: 1px solid #fff;
+		margin-left: 0;
+	}
+	.menu__btn{
+		display: block;
+	}
+	.slider__item-text{
+		font-size: 16px;
+	}
+	.slider__item-title{
+		font-size: 24px;
+	}
+}
+@media(max-width: 450px){
+	.slider__item-link{
+		margin-bottom: 40px;
+	}
+	.services__item{
+		max-width: 100%;
+	}
+}
+@media(max-width: 400px){
+	.header__email{
+		padding-right: 30px;
+	}
+	.services__link{
+		display: block;
+		margin-right: 0;
+		max-width: 80px;
+		margin: 30px auto;
+	}
+	.services__links{
+		padding: 0;
+	}
+}
+@media(max-width: 300px){
+	.header__btn:before{
+		display: block;
+	}
+}
+
+
+
+
+
+
+
+@media(min-width: 701px){
+	.menu ul{
+		display: block !important;
+	}
+}
