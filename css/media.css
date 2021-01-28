@@ -3,6 +3,31 @@
 		background-image: none;
 	}
 }
+@media(max-width: 1170px){
+	.news__inner{
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.news__item-left{
+		max-width: 100%;
+		margin-bottom: 100px;
+	}
+	.news__slider{
+		padding: 0 100px;
+	}
+	.news__item-center{
+		max-width: 45%;
+		margin: 0;
+		text-align: center;
+	}
+	.news__item-right{
+		max-width: 45%;
+		text-align: center;
+	}
+	.news__item-center:before , .news__item-right:before{
+		display: none;
+	}
+}
 @media(max-width: 1160px){
 	.services__inner{
 		display: block;
@@ -22,6 +47,18 @@
 	}
 	.experience__box{
 		margin: 20px auto;
+	}
+	.information__right iframe{
+		width: 500px;
+		height: 280px;
+	}
+	.news{
+		padding-bottom: 0;
+	}
+}
+@media(max-width: 940px){
+	.news__slider{
+		padding: 0 30px;
 	}
 }
 @media(max-width: 900px){
@@ -52,6 +89,10 @@
 	.form__top .services__name{
 		padding-bottom: 0;
 	}
+	.information__right iframe{
+		width: 400px;
+		height: 220px;	
+	}
 }
 @media(max-width: 850px){
 	.form__menu{
@@ -67,6 +108,22 @@
 	}
 	.form{
 		padding-bottom: 50px;
+	}
+}
+@media(max-width: 800px){
+	.information__inner{
+		display: block;
+	}
+	.information__left{
+		max-width: 100%;
+		margin-bottom: 40px;
+		padding-left: 30px;
+	}
+	.information__right{
+		text-align: center;
+	}
+	.information__right iframe{
+		width: 100%;
 	}
 }
 @media(max-width: 700px){
@@ -109,6 +166,31 @@
 	.slider__item-title{
 		font-size: 24px;
 	}
+	.item__left-text{
+		text-align: left;
+	}
+}
+@media(max-width: 690px){
+	.news__item-center{
+		max-width: 100%;
+		margin-bottom: 40px;
+		padding: 0 40px;
+	}
+	.news__item-right{
+		max-width: 100%;
+		padding: 0 40px;
+	}
+}
+@media(max-width: 537px){
+	.news__item-left{
+		padding: 0 20px 45px 30px;
+	}
+	.news__slider{
+		padding: 0 10px;
+	}
+	.news__item-left{
+		margin-bottom: 120px;
+	}
 }
 @media(max-width: 450px){
 	.slider__item-link{
@@ -116,6 +198,15 @@
 	}
 	.services__item{
 		max-width: 100%;
+	}
+	.news-prev{
+		left: 54%;
+	}
+	.information__left{
+		padding-left: 0;
+	}
+	footer{
+		padding: 15px 20px;
 	}
 }
 @media(max-width: 400px){
@@ -130,6 +221,20 @@
 	}
 	.services__links{
 		padding: 0;
+	}
+	.news__slider{
+		padding: 0;
+	}
+}
+@media(max-width: 380px){
+	.news__item-center{
+		padding: 0;
+	}
+	.news__item-right{
+		padding: 0;
+	}
+	.services__name{
+		padding: 0 0 40px;
 	}
 }
 @media(max-width: 300px){
