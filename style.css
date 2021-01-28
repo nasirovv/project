@@ -2,6 +2,7 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+	outline: none;
 }
 .container{
 	max-width: 1170px;
@@ -383,24 +384,26 @@ textarea{
 	margin-bottom: 30px;
 }
 .news__inner{
-	overflow: hidden;
 	padding-bottom: 100px;
+	display: flex;
+	justify-content: space-between;
 }
 .news__item-left{
 	max-width: 550px;
 	background-color: #fff;
-	padding: 70px 40px 45px 80px;
-	position: relative;
+	padding: 0 40px 45px 80px;
 	box-shadow: 0px 7px 24.3px 2.7px rgba(91, 89, 89, 0.14);
-	/*float: left;*/
 }
-.news__item-left:before{
+.item__left-title:before{
 	 content: "\f10e";
 	 font-family: 'icomoon' ;
 	 color: #fff;
 	 background-color: #ffc222;
-	 padding: 10px 30px;
+	 width: 90px;
+	 height: 50px;
 	 position: absolute;
+	 text-align: center;
+	 line-height: 50px;
 	 top: 0;
 	 font-size: 18px;
 }
@@ -411,6 +414,8 @@ textarea{
 	line-height: 26px;
 	margin-bottom: 20px;
 	color: #000;
+	position: relative;
+	padding-top: 70px;
 }
 .item__left-text{
 	text-align: justify;
@@ -423,7 +428,6 @@ textarea{
  }
 .news__item-center{
  	max-width: 262px;
- 	float: left;
  	margin: 0 28px;
 	position: relative;
  }
@@ -437,7 +441,6 @@ textarea{
 }
 .news__item-right{
 	max-width: 262px;
- 	float: left;
  	position: relative;
 }
 .news__item-center:before{
@@ -456,12 +459,15 @@ textarea{
 	padding: 25px 7px 10px;
 	left: 10px;
 }
-.news__slider{
+.news__inner{
 	position: relative;
+}
+.news__slider img{
+	max-width: 100%;
 }
 .slick__news-btn{
 	position: absolute;
-	bottom:0;
+	bottom: -111px;
 	z-index: 3;
 	width: 40px;
 	height: 40px;
@@ -479,15 +485,14 @@ textarea{
 
 }
 .news-next{
-	right: 45%;
-	
+	left: 75%;
 }
 .slick-next:before{
 	content: "\f105";
 	font-family: 'icomoon';
 }
 .news-prev{
-	left: 45%;
+	left: 60%;
 	
 }
 .slick-prev:before{
@@ -502,6 +507,7 @@ textarea{
 	padding: 30px 0;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 .information__left{
 	max-width: 350px;
@@ -513,6 +519,7 @@ textarea{
 	font-size: 18px;
 	letter-spacing: 0.5px;
 	margin-bottom: 20px;
+	line-height: 25px;
 }
 .information__text{
 	color: #d3d2d2;
@@ -573,7 +580,7 @@ footer{
 	font-family: 'Roboto', sans-serif;
 	letter-spacing: 1px;
 	font-size: 12px;
-	line-height: 16px;
+	line-height: 18px;
 }
 .menu__btn{
 	display: none;
